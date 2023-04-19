@@ -36,24 +36,25 @@ const ShoppingList = () => {
     })
 
     return (
+        
         <div className="container row justify-content-center">
+            <h1>TODO</h1>
             <div className="col-6">
-            <ul className="list-group list-group-numbered">
-                {<><input type="text" value={item} onChange={handleInputChange} placeholder="Añade al carrito" onClick={handleInputChange}  /></>
-                
+            <p className="list-group">
+                {<input type="text" className="bg-light" value={item} onChange={handleInputChange} placeholder="Whats need to be done?" onClick={handleInputChange}/>
                 }
                 {
                     list.map((item, index) => (
-                        
-                        <li className="list-group-item"><ShoppingItem
+                        <ShoppingItem
                         name={item}
                         posicion={index}
-                        deleteItem={() => { handleDeleteItem(index) }}
-                    /></li>
+                        deleteItem={() => { handleDeleteItem(index)}}
+                    />
                     ))
                 }
-            </ul>
+            </p>
             </div>
+            
         </div>
     )
 }
