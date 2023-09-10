@@ -37,9 +37,9 @@ const ShoppingList = () => {
 
     return (
         
-        <div className="container row justify-content-center">
-            <h1>TODO</h1>
-            <div className="col-6">
+        <div className="container justify-content-center">
+            <h1>TODO LIST DANIEL CUELLO</h1>
+            <div>
             <p className="list-group">
                 {<input type="text" className="bg-light" value={item} onChange={handleInputChange} placeholder="Whats need to be done?" onClick={handleInputChange}/>
                 }
