@@ -15,7 +15,7 @@ const ShoppingItem = (props) => {
                             <div className="position-absolute top-0 start-100">
                                 <div className="tetx-right position-relative">
                                     <button type="button" className="text-end position-relative btn btn-dark" onClick={props.deleteItem}>
-                                        Delete
+                                        Delete Item
                                     </button>
                                 </div>
                             </div>
